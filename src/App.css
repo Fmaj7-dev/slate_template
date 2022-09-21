@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+body {font-family: Arial, Helvetica, sans-serif;}
+
+
+/** menu bar */
+.navbar {
+  width: 100%;
+  background-color: #777;
+  position: fixed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.navbar a {
+  float: left;
+  padding: 12px;
   color: white;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.menu_right {
+float: right;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar a:hover {
+  background-color: #000;
+}
+
+.active {
+  background-color: #04aaa2;
+}
+
+/** pages */
+.page {
+    background-color: #FFF;
+    border: 1px solid;
+    border-color: var(--black);
+    box-shadow: 4px 4px 4px #00000040;
+    height: 594px;
+    width: 420px;
+    margin-top: 50px;
+    z-index: 1;
+    padding: 10px;
+}
+
+.minipage {
+    background-color: #FFF;
+    border: 1px solid;
+    border-color: var(--black);
+    box-shadow: 4px 4px 4px #00000040;
+    height: 89px;
+    width: 63px;
+    margin-top: 50px;
+    z-index: 1;
+}
+
+.editoret {
+    width: 100%;
+    background: #ddd;
+    display: flex;
+    justify-content: center;
+}
+
+/** columns */
+* {
+  box-sizing: border-box;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 10px;
+  /*overflow: hidden;*/
+}
+
+.left, .right {
+  width: 25%;
+  /*height: 100%;*/
+  background-color:#ddd;
+}
+
+.middle {
+  width: 50%;
+  background-color:#ddd;
 }
